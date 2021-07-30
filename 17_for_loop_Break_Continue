@@ -1,0 +1,10 @@
+for loop:
+  print list/tuple/dict       
+  
+Quiz:
+print the list if items are no. and greater than 6
+
+
+break: loop ko tod do
+continue: go back to to top of loop
+
