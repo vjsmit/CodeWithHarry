@@ -8,3 +8,18 @@ print the list if items are no. and greater than 6
 break: loop ko tod do
 continue: go back to to top of loop
 
+
+Docstring: To know details of fn.
+
+print(function_name.__doc__)
+
+Try and except : To print the error as a string
+
+num1 = (input('Enter 1st no: '))
+num2 = (input('Enter 2nd no: '))
+
+try:
+    print('The sum of the no. is', int(num1) + int(num2))
+except Exception as e:
+    print(e)
+
