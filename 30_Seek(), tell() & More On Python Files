@@ -1,0 +1,26 @@
+tell():
+
+ f.tell() returns an integer giving the file pointer current position in the file represented as a number of bytes.
+ File Pointer/File Handler is like a cursor, which defines from where the data has to be read or written in the file. 
+ Sometimes it becomes important for us to know the position of the File Pointer. With the help of tell(), this task can be performed easily 
+ 
+f = open("myfile.txt", "r")
+print(f.readline() )
+print(f.tell())
+
+
+seek():
+
+To change the position of the file pointer.
+Any read or write will happen from the start. To change the file object’s position, use seek(offset, whence) function. 
+
+Syntax:  file_pointer.seek(offset, whence).
+Offset:   In seek() function, offset is required. Offset is the position of the read/write pointer within the file.
+Whence: This is optional. It defines the point of reference. The default is 0, which means absolute file positioning.
+
+Example:
+This code will change the current file position to 5, and print the rest of the line.
+
+f = open("myfile.txt", "r")
+f.seek(5)
+print( f.readline() )
