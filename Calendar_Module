@@ -1,0 +1,18 @@
+import calendar
+
+# print ("The calendar of year 2012 is : ")
+# print (calendar.calendar(2012,2,1,4))
+#
+# print ("The starting day number in calendar is : ",end="")
+# print (calendar.firstweekday())
+
+# if calendar.isleap(2008):
+#     print('Leap year')
+# else:
+#     print('Not leap')
+
+# print("The leap days between 1950 and 2000 are : ",end="")
+# print (calendar.leapdays(1950, 2000))
+
+print ("The month 5th of 2016 is :")
+print (calendar.month(2016,5,2,1))
