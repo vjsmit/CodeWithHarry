@@ -1,0 +1,36 @@
+A function can only pass a certain number of arguments. 
+The number of arguments has to be decided while defining the function, and it can not be changed while calling it.
+In simple terms, the number of arguments passed should be the same as the ones that are defined.
+
+
+There are two types of arguments that can be passed in a function:
+positional arguments: Order has to be followed while passing arguments.
+keyword arguments: 
+
+Asterisk is used in python as a mathematical symbol for multiplication, but in case of arguments, it refers to unpacking. 
+The unpacking could be for a list, tuple, or a dictionary. 
+
+*args:
+args is a short form used for arguments. It is used to unpack an argument.
+In the case of *args, the argument could be a list or tuple.
+
+**kwargs:
+The full form of **kwargs is keyword arguments. 
+It passes the data to the argument in the form of a dictionary.
+**kwargs, it sends argument in the form of key and value pair. 
+
+
+def funargs(normal, *argsrohan, **kwargsbala):
+    print(normal)
+    for item in argsrohan:
+        print(item)
+    print("\nNow I would Like to introduce some of our heroes")
+    for key, value in kwargsbala.items():
+        print(f"{key} is a {value}")
+        
+har = ["Harry", "Rohan", "Skillf", "Hammad",
+       "Shivam", "The programmer"]
+normal = "I am a normal Argument and the students are:"
+kw = {"Rohan":"Monitor", "Harry":"Fitness Instructor",
+      "The Programmer": "Coordinator", "Shivam":"Cook"}
+funargs(normal, *har, **kw)
