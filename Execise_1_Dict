@@ -1,0 +1,5 @@
+dict1 = {'Pugnacious':'Naughty','Awesome':'Very Good','Python':'Easy','Java':'Complicated'}
+
+d = input('Enter the word: \n')
+
+print(f'Meaning of the {d} is', dict1[d])
