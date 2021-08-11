@@ -1,0 +1,19 @@
+n = 36
+
+no_of_attempts = 0
+total_attempt = 9
+
+while no_of_attempts < total_attempt:
+    no_of_attempts += 1
+    guess = int(input('Enter your guess: '))
+    if guess < n:
+        print('Wrong!!! Select a higher no. Number of attempts left: ', total_attempt-no_of_attempts)
+    elif guess > n:
+        print(f'Wrong!!! Select a lower no. Number of attempts left {total_attempt - no_of_attempts}')
+
+    else:
+        print(f'Bingo!!! You guessed a correct no. in {no_of_attempts} attempt')
+        break
+
+if no_of_attempts >= 9:
+    print('You exhausted your limit of 9 guesses')
