@@ -1,0 +1,18 @@
+It is used to join the elements of a list, tuple, set, etc.
+
+What is the join method in Python?
+"Join is a function in Python, that returns a string by joining the elements of an iterable, using a string or character of our choice."
+Iterables can be a list, dictionary, set, tuple, or even a string itself.
+
+Syntax:
+string.join(iterable)
+
+Note: If the iterable contains any non-string values, join() will raise a TypeError exception.
+
+#join() with lists
+numList = ['1', '2', '3', '4']
+separator = ', '
+print(separator.join(numList))
+
+lst1 = ['Ram','Sam','Pam','Dam']
+print(' and '.join(lst1))
