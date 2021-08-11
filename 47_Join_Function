@@ -16,3 +16,16 @@ print(separator.join(numList))
 
 lst1 = ['Ram','Sam','Pam','Dam']
 print(' and '.join(lst1))
+
+ Along with the iterable, we also have to use a string between each iterable and a string on its own is also iterable; 
+ thus, two strings can also be joined by using the join function.
+ 
+ Join function in Dict:
+ The join function will only return the key part, separated by the string in between, leaving the value side behind.
+ 
+ myDictionary = {"name": "Jack", "country": "America"}
+
+print('separator'.join(myDictionary))
+
+
+
