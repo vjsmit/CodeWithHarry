@@ -1,0 +1,80 @@
+import random
+lst = ['s','w','g']
+total_chance = 10
+chances_left = 1
+my_point = 0
+computer_point = 0
+
+print('\t\t\t\t\tWelcome to Snake, Water and Gun Game')
+print('s for snake\nw for water\ng for gun')
+
+while chances_left <= total_chance:
+
+    my_input = input('Select from Snake/Gun/Water: ')
+    comp_input = random.choice(lst)
+
+
+    if my_input == comp_input:
+        print(f'You selected {my_input} and Computer selected {comp_input}. Its a tie' )
+        print(f'No. of chance left: {total_chance - chances_left}')
+        print(f'Your point: {my_point} and Computer point: {computer_point}')
+
+
+    elif my_input == 's' and comp_input =='g':
+        computer_point +=1
+        print(f'You selected {my_input} and computer selected {comp_input}')
+        print('Computer wins')
+        print(f'Your point: {my_point} and Computer point: {computer_point}')
+        print(f'No. of chance left: {total_chance - chances_left}')
+
+    elif my_input == 'w' and comp_input == 'g':
+        my_point +=1
+        print(f'You selected {my_input} and computer selected {comp_input}')
+        print('You win')
+        print(f'Your point: {my_point} and Computer point: {computer_point}')
+        print(f'No. of chance left: {total_chance - chances_left}')
+
+    elif my_input == 'g' and comp_input == 's':
+        my_point += 1
+        print(f'You selected {my_input} and computer selected {comp_input}')
+        print('You win')
+        print(f'Your point: {my_point} and Computer point: {computer_point}')
+        print(f'No. of chance left: {total_chance - chances_left}')
+
+    elif my_input == 'g' and comp_input == 'w':
+        computer_point += 1
+        print(f'You selected {my_input} and computer selected {comp_input}')
+        print('Computer wins')
+        print(f'Your point: {my_point} and Computer point: {computer_point}')
+        print(f'No. of chance left: {total_chance - chances_left}')
+    elif my_input == 's' and comp_input == 'w':
+        my_point +=1
+        print(f'You selected {my_input} and computer selected {comp_input}')
+        print('You win')
+        print(f'Your point: {my_point} and Computer point: {computer_point}')
+        print(f'No. of chance left: {total_chance - chances_left}')
+    elif my_input == 'w' and comp_input == 's':
+        computer_point +=1
+        print(f'You selected {my_input} and computer selected {comp_input}')
+        print('Computer wins')
+        print(f'Your point: {my_point} and Computer point: {computer_point}')
+        print(f'No. of chance left: {total_chance - chances_left}')
+    else:
+        print('Invalid input')
+
+    chances_left += 1
+
+print('Game Over')
+
+if computer_point == my_point:
+    print('Tie')
+elif computer_point > my_point:
+    print('Computer Wins')
+else:
+    print('You Win')
+
+print(f'Your final tally is {my_point} and Computer final tally is {computer_point}')
+
+
+
+
