@@ -1,0 +1,13 @@
+Classes & Template
+
+A class is a collection of objects, and an object is defined as an instance of class possessing attributes. 
+The object is an entity that has state and behavior.
+
+e.g. if we have a class students, then it will only consist of students related data, such as subjects, names, attendance ratio, etc.
+
+
+Instances
+Constructor
+Methods
+Abstraction
+Inheritance
