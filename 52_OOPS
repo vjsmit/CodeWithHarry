@@ -11,3 +11,9 @@ Constructor
 Methods
 Abstraction
 Inheritance
+
+As procedure-oriented programming focuses on functions, object-oriented programming stresses on objects.
+An object is simply a collection of data and methods.
+
+A class is a blueprint from which objects are created.
+
