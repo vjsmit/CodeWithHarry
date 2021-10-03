@@ -18,5 +18,43 @@ An object is simply a collection of data and methods.
 A class is a blueprint from which objects are created.
 
 
-##print(smit.__dict__) --> __dict__ is a attribute present inside a class and it returns dictionary
+##object.__dict__ --> __dict__ is a attribute present inside a class and it returns dictionary
 
+OOP allows the variables to be used at the class level or the instance level.
+
+Instance variable: variables for which the value of the variable is different for every instance
+Class variable: Class attributes are owned by the class directly, which means that they are not tied to any object or instance.
+
+Methods:
+  A method is just like a function, with a def keyword and a single parameter in which the object's name has to be passed.
+  Its purpose is to show all the details related to the object in a single go.
+  
+Self keyword:
+The self keyword is used in the method to refer to the instance of the current class we are using.
+The self keyword is passed as a parameter explicitly every time we define a method.
+
+def read_number(self):
+        print(self.num)
+        
+__init__ method:-
+"__init__" is also called a constructor in object-oriented terminology. Whereas a constructor is defined as:
+"Constructor in Python is used to assign values to the variables or data members of a class when an object is created."
+#####CLass ko attributes dene ki tarike ko construcutor kehte hai
+#####Jo bhi kaam karna chahte hai object banate time wo init fn karke deta hai.
+#####Class ko jo hm aregument dete hai wo hmesa init ko jata hai
+
+
+Class Methods:
+Class methods take cls parameter that points to the class and not the object instance when the method is called.
+
+class myClass:
+    @classmethod
+    def myfunc (cls, arg1, arg2, ...):
+                          ....
+
+myfunc defines the function that needs to be converted into a class method
+returns: @classmethod returns a class method for function.
+
+Because the class method only has access to the cls argument, it cannot modify the object instance state. 
+However, class methods can still modify the class state that applies to all instances of the class. 
+So a class method automatically recognizes a class, so the only parameter that remains to be passed is the function that needs conversion.
