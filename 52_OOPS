@@ -17,3 +17,6 @@ An object is simply a collection of data and methods.
 
 A class is a blueprint from which objects are created.
 
+
+##print(smit.__dict__) --> __dict__ is a attribute present inside a class and it returns dictionary
+
