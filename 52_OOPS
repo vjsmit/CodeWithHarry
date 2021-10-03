@@ -73,3 +73,15 @@ class Date:
 date1=Date.from_dash("2008-12-5")
 print(date1.year)
 #Output: 2008
+
+58) Static Methods In Python
+static method is bound to a class rather than the objects for that class.
+we use the @staticmethod decorator, which is a built-in decorator.
+Using a static method in a class, we permit it to be accessed only by the class objects or inside the class.
+Unlike, class method, a static method cannot alter or change any variable value or state of the class.
+Static methods do not have any knowledge related to the class.
+we do not need the self or cls to be passed as the first argument in a static method.
+class Student:
+@staticmethod
+    def myfunc():
+        //Code to be executed
