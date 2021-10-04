@@ -85,3 +85,8 @@ class Student:
 @staticmethod
     def myfunc():
         //Code to be executed
+
+59) Abstraction and Encapsulation
+60) Single Inheritence
+61) Multiple Inheritance
+62) Multilevel Inheritance
