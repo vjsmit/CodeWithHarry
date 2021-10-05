@@ -91,3 +91,10 @@ class Student:
 61) Multiple Inheritance
 62) Multilevel Inheritance
 63) Public/Protected(_)/Private(__)
+64) Polymorphism
+65) Super() and Overriding In Classes
+      The need for superclass arises when overriding is being done at a certain point in our code.
+      Overriding occurs when a derived class or child class has the same method that has already been defined in the base or parent class.
+      In the case of instance variables, the case is a little different. 
+      When the method is called, the program will look for any instance variable having the same name as the one that is called in the child,
+      then in the parent, and after that, it comes again into child class if not found.
