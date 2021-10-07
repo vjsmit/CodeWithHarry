@@ -98,7 +98,7 @@ class Student:
       In the case of instance variables, the case is a little different. 
       When the method is called, the program will look for any instance variable having the same name as the one that is called in the child,
       then in the parent, and after that, it comes again into child class if not found.
-67) Operator Overloading
+67) Operator Overloading & Dunder Method
 68) Abstract base class
 69) Setters & Property Decorators
 70) Object Introspection
