@@ -100,5 +100,5 @@ class Student:
       then in the parent, and after that, it comes again into child class if not found.
 67) Operator Overloading & Dunder Method (__repr__ & __str__)
 68) Abstract base class
-69) Setters & Property Decorators
-70) Object Introspection
+69) Setters & Property Decorators, deleter 
+70) Object Introspection (type, id, dir, inspect module)
