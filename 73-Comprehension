@@ -1,0 +1,7 @@
+List - []
+Dict- {key, value pair}
+Set- {}
+Generator- ()
+
+ Using comprehension, we compress the code so it takes less space. Comprehension in Python converts the four to five lines of code into a one-liner.
+ 
