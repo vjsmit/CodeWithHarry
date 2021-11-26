@@ -25,6 +25,8 @@ OOP allows the variables to be used at the class level or the instance level.
 Instance variable: variables for which the value of the variable is different for every instance
 Class variable: Class attributes are owned by the class directly, which means that they are not tied to any object or instance.
 
+from instance we cant change the class variables, and if we want to change then it will create a new instance variable
+
 Methods:
   A method is just like a function, with a def keyword and a single parameter in which the object's name has to be passed.
   Its purpose is to show all the details related to the object in a single go.
