@@ -68,7 +68,7 @@ class Date:
         self.month = month
         self.day = day
 
-@classmethod 
+    @classmethod 
     def from_dash(cls,string):
           return cls(*string.split("-"))
 
@@ -89,10 +89,45 @@ class Student:
         //Code to be executed
 
 59) Abstraction and Encapsulation
+    Abstraction refers to hiding unnecessary details to focus on the whole product instead of parts of the project separately.
+    
 60) Single Inheritence
-61) Multiple Inheritance
-62) Multilevel Inheritance
+61) Multiple Inheritance :
+        In multiple inheritance, a class is derived from more than one class i.e. multiple base classes. 
+        The child class, in this case, has features of both the parent classes."
+        The order of placing the base classes is very important.
+    Method Overriding:
+        Override means having two methods that have the same name. They may perform same tasks or different tasks.
+        When the same method defined in the parent class is also defined in the child class, the process is known as Method overriding.  
+        
+    few rules for Method overriding:
+    The name of the child method should be the same as parents.
+    Inheritance should be there, and we need to derive a child class from a parent class
+    Both of their parameters should be the same. 
+    
+62) Multilevel Inheritance:
+      A class that is already derived from another class is derived by a third class. 
+      So in this way, the third class has all the other two former classes' features and functionalities.
+      
 63) Public/Protected(_)/Private(__)
+    Public Access Modifier:
+      In public, all the functions, variables, methods can be used publicly. Every other class can access them easily without any restriction.
+      
+    Protected Access Modifier:
+      Its members and functions can only be accessed by the classes derived from it, i.e., its child class or classes. No other environment is permitted to access it. 
+      To declare the data members as protected, we use a single underscore “_” sign before the data members of the class.
+      e.g. class employee:
+              def __init__(self, name, age):
+                  self._name=name # protected attribute 
+                  self._age=age # protected attribute
+                  
+    Private Access Modifier:
+       The variables and functions can only be accessed within the class. The private restriction level is the highest for any class. 
+       To declare the data members as private, we use a double underscore “_­_” sign before the data members of the class.
+    Name mangling:
+        _object._class__variable
+        e.g. emp._Employee__pr
+        
 64) Polymorphism
 65) Super() and Overriding In Classes
       The need for superclass arises when overriding is being done at a certain point in our code.
